@@ -6,5 +6,7 @@ Various types of regression like
 - Lasso Regression 
 - Ridge Regression 
 - Kernel Regression 
-- K-Nearest Neighbor 
+- K-Nearest Neighbor
+
+
 Are discussed here in the repository 
