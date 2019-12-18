@@ -55,5 +55,15 @@ So suppose you want to sell your house and you want to predict the price of your
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(3).png"/>
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(4).png"/>
 </p>
+ 
+
+Here in the dataset we can see there is one input parameter which is the size of the house(**square ft**) while ouptut of our regerssion model will be the price of the house(**$$$**).
+
+### Assumption in Regression
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(4).png"/>
+</p>
 
 
