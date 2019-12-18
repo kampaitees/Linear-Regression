@@ -63,7 +63,8 @@ Here in the dataset we can see there is one input parameter which is the size of
 
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(4).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(5).png"/>
 </p>
+
 
 
