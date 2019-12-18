@@ -210,9 +210,57 @@ Now we have basic knowledge regarding Machine Learning, let's explore various **
 
 **Simple linear regression** is a **linear regression** model with a single variable as input. That is, it concerns
 two-dimensional sample points with one independent variable and one dependent variable (conventionally, the x and y 
-coordinates in a Cartesian coordinate system) and finds a linear function (a non-vertical straight line) that, as accurately 
-as possible, predicts the dependent variable values as a function of the independent variables.
+coordinates in a Cartesian coordinate system) and finds a linear function (a non-vertical straight line) that, as
+accurately as possible, predicts the dependent variable values as a function of the independent variables.
 It is the simplest form of all regression algorithms.
+
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(9).png"/>
+</p>
+
+
+
+
+
+So going back to our flowchart, what we're gonna talk about now is specifically the machine learning model. So that's
+highlighted green box and everything else is grayed out so you can forget about everything else for now. We're just 
+talking about our model and what form it takes. So our **Simple Linear Regression** model is just that. It's very simple. 
+We're assuming we have just one input, which in this case is, **square feet** of the house and one output which is the house
+**sales price** and we're just gonna fit a line. A very simple function here not that quadratic function or higher order 
+polynomials we talked about before, just a very simple line. And what's the equation of a line?
+ 
+Well, it's just **intercept** plus **slope** times our variable of interest so that we're gonna say that's W<sub>0</sub> + W<sub>1</sub>x. And what this regression model then specifies is that each one of our observations y<sub>i</sub> is
+simply that function evaluated at X<sub>i</sub>. So that's  W<sub>0</sub> plus W<sub>i</sub> * X<sub>i</sub> plus the 
+error term which we called &epsilon;<sub>i</sub>. So this is our regression model, and to be clear, this error,
+&epsilon;<sub>i</sub>, is the distance from our specific observation back down to the line.
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(10).png"/>
+</p>
+
+
+
+
+
+Equation of Simple Linear Regression is,
+
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn%20(2).gif"/>
+</p>
+
 
 
 
