@@ -91,3 +91,4 @@ We can see from the above image that there are some points scatter on the 2D spa
 Similarly there is some error in all the predicted value of the datapoints.
 
 $yi = f(xi) + \epsilon$
+$\forall x \in X, \quad \exists y \leq \epsilon$
