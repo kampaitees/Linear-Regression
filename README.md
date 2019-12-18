@@ -38,9 +38,9 @@ in this blog, we are going to study **Simple Linear Regression**, **Multiple Lin
 Simple linear regression is a linear regression model with a single variable as input. That is, it concerns two-dimensional sample points with one independent variable and one dependent variable (conventionally, the x and y coordinates in a Cartesian coordinate system) and finds a linear function (a non-vertical straight line) that, as accurately as possible, predicts the dependent variable values as a function of the independent variables.
 It is the simplest form of all regression algorithms.
 
-Before going into deep, let's first discuss some terms, examples related to regeression
+**Before going into deep, let's first discuss some terms, examples related to regeression**
 
-So suppose you want to sell your house and you want to predict the price of your house on the basis of size of the house then you can easily predict the price of house using Simple Linear Regression.
+So suppose you want to sell your house and you want to predict the price of your house on t he basis of size of the house then you can easily predict the price of house using Simple Linear Regression.
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18.png"/>
@@ -49,7 +49,7 @@ So suppose you want to sell your house and you want to predict the price of your
 </p>
 
 
-So here Data will be like 
+**So here Data will be like**
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(3).png"/>
