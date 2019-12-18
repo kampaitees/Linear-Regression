@@ -33,10 +33,19 @@ in this blog, we are going to study **Simple Linear Regression**, **Multiple Lin
 </p>
 
 
+
+
+
+
+
 ### Simple Linear Regression
 
 Simple linear regression is a linear regression model with a single variable as input. That is, it concerns two-dimensional sample points with one independent variable and one dependent variable (conventionally, the x and y coordinates in a Cartesian coordinate system) and finds a linear function (a non-vertical straight line) that, as accurately as possible, predicts the dependent variable values as a function of the independent variables.
 It is the simplest form of all regression algorithms.
+
+
+
+
 
 **Before going into deep, let's first discuss some terms, examples related to regeression**
 
@@ -49,6 +58,12 @@ So suppose you want to sell your house and you want to predict the price of your
 </p>
 
 
+
+
+
+
+
+
 **So here Data will be like**
 
 <p align="center">
@@ -57,7 +72,12 @@ So suppose you want to sell your house and you want to predict the price of your
 </p>
  
 
+
 Here in the dataset we can see there is one input parameter which is the size of the house(**square ft**) while ouptut of our regerssion model will be the price of the house(**$$$**).
+
+
+
+
 
 ### Assumption in Regression
 
@@ -67,4 +87,6 @@ Here in the dataset we can see there is one input parameter which is the size of
 </p>
 
 
-
+We can see from the above image that there are some points scatter on the 2D space where Y-axis is the price of the house and X-axis is the size of the house and points are scattered according to that. Then there is green line which we call as the function(f(x)) best fitting on the our data(we will see later). But we can see that our function do not pass through all the data points. So if we take a point Xi(say) marked blue in the image above we see that there is gap between original value and predicted value at Xi. This gap is called as the error($\epsilon\$i).
+Similarly there is some error in all the predicted value of the datapoints.
+$yi = f(xi) + \epsilon$
