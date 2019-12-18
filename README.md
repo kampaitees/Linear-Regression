@@ -89,4 +89,5 @@ Here in the dataset we can see there is one input parameter which is the size of
 
 We can see from the above image that there are some points scatter on the 2D space where Y-axis is the price of the house and X-axis is the size of the house and points are scattered according to that. Then there is green line which we call as the function(f(x)) best fitting on the our data(we will see later). But we can see that our function do not pass through all the data points. So if we take a point Xi(say) marked blue in the image above we see that there is gap between original value and predicted value at Xi. This gap is called as the error($\epsilon\$i).
 Similarly there is some error in all the predicted value of the datapoints.
+
 $yi = f(xi) + \epsilon$
