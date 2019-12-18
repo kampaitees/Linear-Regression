@@ -1,12 +1,10 @@
-# Linear-Regression
-This repository will contain all codes and projects related to Linear Regression
-Various types of regression like 
-- Simple Linear Regression 
-- Multiple Linear Regression 
-- Lasso Regression 
-- Ridge Regression 
-- Kernel Regression 
-- K-Nearest Neighbor
+# Regression
 
-
-Are discussed here in the repository 
+## Introduction
+In this blog, we will discuss major important topics that will form a base for Machine Learning which are 
+    - **Simple Linear Regression** 
+    - **Multiple Linear Regression**
+    - **Lasso Regression**
+    - **Ridge Regression**
+    - **Kernel Regression**
+    - **K-Nearest Neighbor**
