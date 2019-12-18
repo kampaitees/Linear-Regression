@@ -109,11 +109,31 @@ By this equation we meant that, it's equally likely that our error is positive o
 
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(6).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(7).png"/>
 </p>
 
 
 
 Okay. So, I want to be clear that this is the model that we're using. This is how we're assuming the world works. And there's this very famous quote by George Box that says, "Essentially, all models are wrong, but some are useful". So what this means is no models going to be exactly how the world works. It's not going to exactly predict how houses sell, just based on square feet, or even if you incorporated other things as well. There's always different idiosyncracies in how the world works.
 So above we have discussed the assumption had been taken while designing the algortihm.
+
+
+
+**So now we are gonna discuss the block diagram of evry machine learning algorithm**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-18%20(8).png"/>
+</p>
+
+
+So every machine learning algorithm start with training data which includes several features/attributes here rin our example of house price prediction there can be many attributes such as house id, house sales, location of house, # of rooms etc... then all those attributes are passed onto next where the feature selection happens i.e. it is not necessary that all the feautres in the dataset are good for the prediction of the house price after doing feature selection via many algorithms(we will discsuss later tin the blog) we have all the important features of the dataset then we will pass them throught a ML model which will predict the price of house.
+
+So now we have the predicted price of house but we should have some metrics system which will tell how much close we have predicted the price or how much accurate our algorithm is. After calculating the errors in the prediction we will again train the our Machine Learning algorithm on the data and repeat the process again and again till we reach to the required accuarcy.
+
+So this is the life cycle of Machine Learning algorithm on a every dataset.
+
+Now we have all the basic knowledge to explore various regeression algorithms.
+
 
