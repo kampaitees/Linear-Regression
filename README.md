@@ -258,7 +258,7 @@ Equation of Simple Linear Regression is,
 
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn%20(2).gif"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(2).gif"/>
 </p>
 
 
