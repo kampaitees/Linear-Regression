@@ -380,9 +380,44 @@ of the *Simple Linear Regression*
 
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(5).png"/>
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(6).png"/>
 </p>
 
+ 
+**The above Regression model can be used by the seller as well as by the buyers both. Here it is how.**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(7).png"/>
+</p>
+
+
+
+
+**Seller can put the size of his/her house in the equation and can easily predict the house price which he/she wanted 
+to sell.**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(8).png"/>
+</p>
+
+
+
+**Simiarly, a buyer can put his/her budget in the equation and can know how much bigger house he/she can buy in their
+budget.** 
+
+
+
+**Example is shown below in the image**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(9).png"/>
+</p>
 
 
