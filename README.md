@@ -17,7 +17,7 @@
 and an independent variable.**
 
 **The above definition is bookish, in simple terms the regression can be defined as, *Using the relationship between
-variables to find the best fit line or the regression equation that can be used to make prediction* **.
+variables to find the best fit line or the regression equation that can be used to make prediction***.
 
 
 
@@ -29,7 +29,7 @@ variables to find the best fit line or the regression equation that can be used 
 
 
 **There are many types of regressions such as *Linear Regression*, *Polynomial Regression*, *Logistic regression* and
-various other *Regression* algorithms but in this blog, we are gonna study *Simple Linear Regression*, *Multiple Linear Regression*, *Lasso Regression*, *Ridge Regression*, *Kernel Regression* & *K-Nearest Neighbor Regression* **.
+various other *Regression* algorithms but in this blog, we are gonna study *Simple Linear Regression*, *Multiple Linear Regression*, *Lasso Regression*, *Ridge Regression*, *Kernel Regression* & *K-Nearest Neighbor Regression***.
 
 
 
@@ -264,7 +264,7 @@ error term which we called &epsilon;<sub>i</sub>. So this is our regression mode
 
 
 
-**While that for any point on the 2D space is, **
+**While that for any point on the 2D space is,**
 
 
 
@@ -371,7 +371,7 @@ descent* in the blog.**
 
 
 **Before discussing the optimization algorithm we will first discuss the interpretation of the paramters in the equation
-of the *Simple Linear Regression*
+of the *Simple Linear Regression***
 
 
 ## Use & Interpretation of the fitted Line
@@ -411,9 +411,6 @@ budget.**
 
 
 
-**A concrete example is shown below**
-
-
 
 
 <p align="center">
@@ -450,9 +447,6 @@ per unit change in the size of the house(*input*)**
 
 
 
-
-
-**A concrete example**
 
 
 
