@@ -1,7 +1,7 @@
 # Regression
 
 ## Introduction
-**In this blog, we will discuss major important topics that will form a base for Machine Learning which are** 
+**In this blog, we will discuss major important topics that will form a base for *Machine Learning* which are** 
     
     - Simple Linear Regression 
     - Multiple Linear Regression
@@ -13,11 +13,11 @@
     
 ## What is Regression?
 
-**Regression analysis is a form of predictive modelling technique which investigates the relationship between a dependent
+***Regression analysis* is a form of predictive modelling technique which investigates the relationship between a dependent
 and an independent variable.**
 
-**The above definition is bookish, in simple terms the regression can be defined as, Using the relationship between
-variables to find the best fit line or the regression equation that can be used to make prediction**.
+**The above definition is bookish, in simple terms the regression can be defined as, *Using the relationship between
+variables to find the best fit line or the regression equation that can be used to make prediction* **.
 
 
 
@@ -28,8 +28,8 @@ variables to find the best fit line or the regression equation that can be used 
 
 
 
-**There are many types of regressions such as Linear Regression, Polynomial Regression, Logistic regression and
-various other Regression algorithms but in this blog, we are gonna study Simple Linear Regression, Multiple Linear Regression, Lasso Regression, Ridge Regression, Kernel Regression & K-Nearest Neighbor Regression**.
+**There are many types of regressions such as *Linear Regression*, *Polynomial Regression*, *Logistic regression* and
+various other *Regression* algorithms but in this blog, we are gonna study *Simple Linear Regression*, *Multiple Linear Regression*, *Lasso Regression*, *Ridge Regression*, *Kernel Regression* & *K-Nearest Neighbor Regression* **.
 
 
 
@@ -58,7 +58,7 @@ better later**
 
 
 **So suppose you want to sell your house and you want to predict the price of your house based on the size of the house then
-you can easily predict the price of a house using Simple Linear Regression.**
+you can easily predict the price of a house using *Simple Linear Regression*.**
 
 
 
@@ -96,8 +96,8 @@ you can easily predict the price of a house using Simple Linear Regression.**
 
 
 
-**In the dataset above, we can see there is one input parameter which is the size of the house(square ft) while
-the output of our regression model will be the price of the house($$$).**
+**In the dataset above, we can see there is one input parameter which is the size of the house(*square ft*) while
+the output of our *regression* model will be the price of the house(*$$$*).**
 
 
 
