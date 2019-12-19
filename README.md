@@ -228,15 +228,15 @@ It is the simplest form of all regression algorithms.**
 
 
 
-**So going back to our flowchart, what we're gonna talk about now is specifically the machine learning model. So that's
-highlighted green box and everything else is grayed out so you can forget about everything else for now. We're just 
-talking about our model and what form it takes. So our *Simple Linear Regression* model is just that. It's very simple. 
-We're assuming we have just one input, which in this case is, *square feet* of the house and one output which is the house
-*sales price* and we're just gonna fit a line. A very simple function here not that quadratic function or higher order 
-polynomials we talked about before, just a very simple line. And what's the equation of a line?**
+**So going back to our flowchart, what we're gonna talk about now is specifically the machine learning model. So
+that's highlighted green box and everything else is grayed out so you can forget about everything else for now. We're
+just talking about our model and what form it takes. So our *Simple Linear Regression* model is just that. It's very 
+simple. We're assuming we have just one input, which in this case is, *square feet* of the house and one output which
+is the house *sales price* and we're just gonna fit a line. A very simple function here not that quadratic function 
+or higher order polynomials we talked about before, just a very simple line. And what's the equation of a line?**
  
-**Well, it's just *intercept* plus *slope* times our variable of interest so that we're gonna say that's W<sub>0</sub> + W<sub>1</sub>x. And what this regression model then specifies is that each one of our observations y<sub>i</sub> is
-simply that function evaluated at X<sub>i</sub>. So that's  W<sub>0</sub> plus W<sub>i</sub> * X<sub>i</sub> plus the 
+**Well, it's just *intercept* plus *slope* times our variable of interest so that we're gonna say that's W<sub>0</sub> + W<sub>1</sub>x. And what this regression model then specifies is that each one of our observations y<sub>i</sub> is simply that 
+function evaluated at X<sub>i</sub>. So that's  W<sub>0</sub> plus W<sub>i</sub> * X<sub>i</sub> plus the 
 error term which we called &epsilon;<sub>i</sub>. So this is our regression model, and to be clear, this error,
 &epsilon;<sub>i</sub>, is the distance from our specific observation back down to the line.**
 
@@ -286,8 +286,10 @@ error term which we called &epsilon;<sub>i</sub>. So this is our regression mode
 
 
 
-**In the equation of Simple Linear Regression we can clearly see that it is nothing but an equation of Straight Line where, slope is w<sub>i</sub> while intercept is w<sub>0</sub>, y<sub>i</sub> is our prediction and x<sub>i</sub> is our input which is the size of the house.
-Slope and intercept here are called parameters : regression coefficients. We will explore then in details later in the blog.**
+**In the equation of Simple Linear Regression we can clearly see that it is nothing but an equation of Straight Line
+where, slope is w<sub>i</sub> while intercept is w<sub>0</sub>, y<sub>i</sub> is our prediction and x<sub>i</sub> is
+our input which is the size of the house. Slope and intercept here are called parameters : regression coefficients.
+We will explore then in details later in the blog.**
 
 
 
@@ -302,10 +304,14 @@ Slope and intercept here are called parameters : regression coefficients. We wil
 </p>
 
  
-**While working with a Simple Linear Regression model, let's talk about how we're gonna fit a line to data. But before we talk about specific algorithms for fitting, we need to talk about how we're gonna measure the quality of a fit. So, we're gonna talk about this orange box in the above image which is quality metric.**
+**While working with a *Simple Linear Regression* model, let's talk about how we're gonna fit a line to data. But
+before we talk about specific algorithms for fitting, we need to talk about how we're gonna measure the quality of
+a fit. So, we're gonna talk about this orange box in the above image which is quality metric.**
 
 
-**So here the metric we are going to use is called Residual Sum of Errors also abbreviated as RSS. It is nothing but sum of squares of difference between original price of house and predicted price of house by our model over whole training dataset i.e.,**
+**So here the metric we are going to use is called *Residual Sum of Errors* also abbreviated as *RSS*. It is nothing
+but sum of squares of difference between original price of house and predicted price of house by our model over whole
+training dataset i.e.,**
 
 
 
@@ -317,7 +323,7 @@ Slope and intercept here are called parameters : regression coefficients. We wil
 
 
 
-**Above dangerously looking equation can be compressed as below using Sigma(&Sigma;) notation,** 
+**Above dangerously looking equation can be compressed as below using Sigma(*&Sigma;*) notation,** 
 
 
 
@@ -325,3 +331,58 @@ Slope and intercept here are called parameters : regression coefficients. We wil
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(3).png"/>
 </p>
+
+
+
+
+
+Above equation can also be written as,
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(4).gif"/>
+</p>
+
+
+**Where y<sub>hat</sub> is our prediction at each data point and we calculate it's difference from the original
+value, then we are squaring it and doing the sum of all the sqaures at each data points to calculate the overall
+cost.**
+
+
+**Now we have overall cost of a particular *Regression* model, we can try different possible combination of 
+parameters i.e., w<sub>0</sub> and w<sub>1</sub> which will give different cost and we will take that line which
+had minimum cost**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(4).png"/>
+</p>
+
+
+**So now the questions arises till when we keep on searching the values for paramaters and how we will get to know
+whether the parameters we got are one having the minimum cost on our dataset i.e. best parmaters for the dataset.**
+
+**So to solve this problem there comes the concept of optimization algorithms which will tell us that when to stop
+and provide us the best parameters for the dataset. There are several optimization techniques like *Gradient Descent*,
+*Coordinate Descent*, *Adam*, *RMP prop*, *Momentum* but we are gonna discuss only *Gradient Descent*  and *Coordinate
+descent* in the blog.**
+
+
+**Before discussing the optimization algorithm we will first discuss the interpretation of the paramters in the equation
+of the *Simple Linear Regression*
+
+
+## Use & Interpretation of the fitted Line
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(5).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(6).png"/>
+</p>
+
+
+
