@@ -411,7 +411,7 @@ budget.**
 
 
 
-**Example is shown below in the image**
+**A concrete example is shown below**
 
 
 
@@ -419,5 +419,36 @@ budget.**
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(9).png"/>
 </p>
+
+
+
+### Interpreting the coefficients
+
+**W<sub>0</sub> is nothing but it's the price of the house when the size of the house is 0 which doesn't make sense
+but W<sub>0</sub> deosn't have any meaning full inetrpretation**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(10).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(11).png"/>
+</p>
+
+
+
+
+**W<sub>1</sub> is the slope of the line which here means that it is predicted change in the price of the house(*output*)
+per unit change in the size of the house(*input*)**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(12).png"/>
+</p>
+
+
+
 
 
