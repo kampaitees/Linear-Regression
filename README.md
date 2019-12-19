@@ -432,7 +432,7 @@ but W<sub>0</sub> deosn't have any meaning full inetrpretation**
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(10).png"/>
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(11).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(12).png"/>
 </p>
 
 
@@ -445,8 +445,72 @@ per unit change in the size of the house(*input*)**
 
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(12).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(11).png"/>
 </p>
+
+
+
+
+
+**A concrete example**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(12a).png"/>
+</p>
+
+
+
+**We have seen the metrics(*RSS*) which we will be using to decide whether parameters of a particular model are good 
+enough for the dataset & to decide the best model for a dataset. Let now see the algorithms for fitting the model.**
+
+
+
+
+
+## Algorithm for fitting the model
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(13).png"/>
+</p>
+
+
+
+
+**Now that we have an understanding of what the fitted line is, and how we can use it, let's talk about an algorithm
+for searching out the space of all possible lines that we might use, and finding the one that best fits the data.
+So in particular what we're going to be doing is focusing in on this machine learning algorithm, which is this dark
+gray square shown in the above flow chart.**
+ 
+**So recall that our cost was to find us this *Residual Sum of Squares*, and for any given line, we can compute
+the cost of that line. So, for example, we showed three different lines and three different residual sum of squares here,
+but our goal was to minimize over all possible W0 and W1 slopes and intercepts, but a question is, how are we going
+to do this? So that's the key question that we're looking to address in this section.**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(14).png"/>
+</p>
+
+
+
+
+**Let's formalize this idea a little bit more. So here, what we're showing is our *Residual Sum of Squares* and what
+we see is it's a function of two variables, w<sub>0</sub> and w<sub>1</sub>. So we can write it generically, let's
+just write it as some function g of a variable w<sub>0</sub> and a variable w<sub>1</sub>. And what I've done is I've
+gone ahead and plotted the residual sum of squares versus w<sub>0</sub> and w<sub>1</sub> for the data set. So here
+along this axis is w<sub>0</sub> and along this axis is w<sub>1</sub>. And then we are plotting here our 
+*Residual Sum of Squares*. And that is this blue mesh surface here, that's our residual sum of squares for any given
+w<sub>0</sub>, w<sub>1</sub> pair. And our objective here is to minimize over all possible combinations of w<sub>0</sub>,
+and w<sub>1</sub>.**
+
+**So we want to find the specific value of w<sub>0</sub>. So, we'll call that w<sub>0</sub> hat. And w<sub>1</sub> hat,
+that minimize this *Residual Sum of Squares*. So, this is our objective. This is an optimization problem, where specifically the optimization objective is to minimize a function, in this case, of two parameters, two different variables**
 
 
 
