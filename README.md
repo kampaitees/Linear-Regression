@@ -582,3 +582,74 @@ is zero. The value where a derivative is zero will give the minimum and maximum 
 
 
 
+
+## Finding Maximum via Hill Climbing
+
+
+**We can find maximum/minimum by setting the first derivative to zero but there are many function which are 
+*non-derivable* i.e., we can't take their derivative so in that case we are gonna use this *Hill Climbing/Descent*
+algorithm.**
+
+**So in this algorithm, we start from a point and our aim is to reach to the value where the function takes the 
+maximum value. But we don't know whether we have to move forward or backward in order to reach to maximum value???**
+
+**So at each iteration we will take the derivative of the function and check whether it is positive or negative.
+If it is negative then we have to move backward while if it's positive then we have to move forward (as it is 
+*Concave* function).**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(3).png"/>
+</p>
+
+
+
+**So algorithm is,**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(5).gif"/>
+</p>
+
+
+
+## Finding Minimum via Hill Descent
+
+
+**We can find maximum/minimum by setting the first derivative to zero but there are many function which are 
+*non-derivable* i.e., we can't take their derivative so in that case we are gonna use this *Hill Climbing/Descent*
+algorithm.**
+
+**So in this algorithm, we start from a point and our aim is to reach to the value where the function takes the 
+minimum value. But we don't know whether we have to move forward or backward in order to reach to minimum value???**
+
+**So at each iteration we will take the derivative of the function and check whether it is positive or negative.
+If it is negative then we have to move forward while if it's positive then we have to move backward (as it is 
+*Convex* function).**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(4).png"/>
+</p>
+
+
+
+
+
+
+**So algorithm is,**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(6).gif"/>
+</p>
+
+
+
+
+
+
