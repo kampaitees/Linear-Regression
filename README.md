@@ -780,7 +780,8 @@ dimensional input instead of a single feature as input.**
 ## Contour plot
 
 
-**It is nothing but a way of visualising the *Gradient Descent* algorithm in 2D. It's actually *Bird's Eye View* of the algorithm**
+**It is nothing but a way of visualising the *Gradient Descent* algorithm in 2D. It's actually *Bird's Eye View* of
+the algorithm.**
 
 
 
