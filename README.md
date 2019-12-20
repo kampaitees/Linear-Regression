@@ -317,7 +317,7 @@ a fit. So, we're gonna talk about this orange box in the above image which is qu
 
 **So here the metric we are going to use is called *Residual Sum of Errors* also abbreviated as *RSS*. It is nothing
 but the sum of squares of the difference between the original price of the house and predicted the price of the house by
-our model over the wholextraining dataset i.e.,**
+our model over the whole training dataset i.e.,**
 
 
 
@@ -357,7 +357,7 @@ cost.**
 
 **Now we have overall cost of a particular *Regression* model, we can try the different possible combination of 
 parameters i.e., w<sub>0</sub> and w<sub>1</sub> which will give different cost and we will take that line which
-had minimum cost.**
+had a minimum cost.**
 
 
 
@@ -586,15 +586,14 @@ is zero. The value where a derivative is zero will give the minimum and maximum 
 ## Finding Maximum via Hill Climbing
 
 
-**We can find maximum/minimum by setting the first derivative to zero but there are many function which are 
+**We can find maximum/minimum by setting the first derivative to zero but there are many functions which are 
 *non-derivable* i.e., we can't take their derivative so in that case we are gonna use this *Hill Climbing/Descent*
 algorithm.**
 
-**So in this algorithm, we start from a point and our aim is to reach to the value where the function takes the 
-maximum value. But we don't know whether we have to move forward or backward in order to reach to maximum value???**
+**So in this algorithm, we start from a point and we aim to reach to the value where the function takes the maximum value. But we don't know whether we have to move forward or backwards to reach to maximum value???**
 
-**So at each iteration we will take the derivative of the function and check whether it is positive or negative.
-If it is negative then we have to move backward while if it's positive then we have to move forward (as it is 
+**So at each iteration, we will take the derivative of the function and check whether it is positive or negative.
+If it is negative then we have to move backwards while if it's positive then we have to move forward (as it is 
 *Concave* function).**
 
 
@@ -618,15 +617,14 @@ If it is negative then we have to move backward while if it's positive then we h
 ## Finding Minimum via Hill Descent
 
 
-**We can find maximum/minimum by setting the first derivative to zero but there are many function which are 
+**We can find maximum/minimum by setting the first derivative to zero but there are many functions which are 
 *non-derivable* i.e., we can't take their derivative so in that case we are gonna use this *Hill Climbing/Descent*
 algorithm.**
 
-**So in this algorithm, we start from a point and our aim is to reach to the value where the function takes the 
-minimum value. But we don't know whether we have to move forward or backward in order to reach to minimum value???**
+**So in this algorithm, we start from a point and we aim to reach to the value where the function takes the minimum value. But we don't know whether we have to move forward or backwards to reach to minimum value???**
 
-**So at each iteration we will take the derivative of the function and check whether it is positive or negative.
-If it is negative then we have to move forward while if it's positive then we have to move backward (as it is 
+**So at each iteration, we will take the derivative of the function and check whether it is positive or negative.
+If it is negative then we have to move forward while if it's positive then we have to move backwards (as it is 
 *Convex* function).**
 
 
@@ -653,25 +651,24 @@ If it is negative then we have to move forward while if it's positive then we ha
 
 
 
-**So now we know how to find the maximum/minimum value of a function but there are few skeptical things in the algorithm 
-which you will be thinking how to decide them. So now we are gonna discuss how to decide them i.e., we will explore what
-&eta; value we should take and what should be the convergence criteria for algorithm i.e., when we have to stopthe algorithm.**
+**So now we know how to find the maximum/minimum value of a function but there are few sceptical things in the algorithm which you will be thinking how to decide them. So now we are gonna discuss how to decide them i.e., we will explore what
+&eta; the value we should take and what should be the convergence criteria for algorithm i.e., when we have to stop the algorithm.**
 
 
 ## Choosing the Stepsize(&eta;)
 
 
-**Stepsize(&eta;) decides how much time it will take to the algorithm to reach to minimum/maximum value of function.
-If &eta; is very high then there are chnaces that we may overshoot the required parameters and will never reach to
-that value again and if &eta; value is very small then it will take a long time for algorithm to find the required 
+**Stepsize(&eta;) decides how much time it will take to the algorithm to reach to minimum/maximum value of the function.
+If &eta; is very high then there are chances that we may overshoot the required parameters and will never reach to
+that value again and if &eta; value is very small then it will take a long time for the algorithm to find the required 
 parameters.
 So it's kind of art to find the optimum value of stepsize for the dataset.**
 
-**It is suggested to take *Stepsize* where initially it's value is relatively large, as our algorithm progresses it's
-value keep on decreasing because initially we start from a random value of parameters so we want to take big steps to 
-converge fast but after each iteration we are more close to optimum parameters so after some iterations we are more 
-close to required parameters so we don't wan't to overshoot them therefore we take the stepsize in such a way that 
-initially it is large and keep on decreasing after each iteration.**
+**It is suggested to take *Stepsize* where initially it's values is relatively large, as our algorithm progresses it's
+value keeps on decreasing because initially, we start from a random value of parameters so we want to take big steps to 
+converge fast but after each iteration, we are more close to optimum parameters so after some iterations, we are more 
+close to required parameters so we don't want to overshoot them, therefore, we take the step size in such a way that 
+initially, it is large and keeps on decreasing after each iteration.**
 
 
 **Some common choices for *Stepsize* are,**
@@ -700,10 +697,9 @@ initially it is large and keep on decreasing after each iteration.**
 ## Convergence criteria
 
 
-**For *Convex* functions we can find the optimum value when first derivative is set to zero but in practice, where
-there may be chances that the function may not be derivable so we never use this method i.e., finding the first 
-derivative and setting it to zero. We always use *Hill Climbing/Descent* algorithm and in *Machine Learning* we 
-always want to minnimize the cost and our cost functions are also *Convex* for we are gonna use *Hill Descent* algorithm.**
+**For *Convex* functions we can find the optimum value when the first derivative is set to zero but in practice, where
+there may be chances that the function may not be derivable so we never use this method i.e., finding the first derivative and setting it to zero. We always use *Hill Climbing/Descent* algorithm and in *Machine Learning* we 
+always want to minimize the cost and our cost functions are also *Convex* for we are gonna use *Hill Descent* algorithm.**
 
 
 
@@ -716,13 +712,12 @@ always want to minnimize the cost and our cost functions are also *Convex* for w
 
 
 
-**In practice we will stop the algorithm when magnitude of the *First Derivative* is less than some 
-threshold(&epsilon;) set by us only. The reason for this is that in practice, we can never get to the minimum of the
+**In practice we will stop the algorithm when the magnitude of the *First Derivative* is less than some threshold(&epsilon;) set by us only. The reason for this is that in practice, we can never get to the minimum of the
 function because of randomness in the dataset so we are happy with the parameters that are exactly not optimum but very
 near to the optimum parameters.** 
   
 **But as we know that input attributes are not a single(except *Simple Linear Regression*) attribute so instead of
-taking the derivative we will take partial derivative w.r.t each and every attribute of the dataset and we will call it 
+taking the derivative we will take partial derivative w.r.t every attribute of the dataset and we will call it 
 as *Gradient* of the function and our algorithm's name *Hill Descent* is changed to *Gradient Descent* in multiple dimensions.**
 
 
@@ -750,7 +745,7 @@ as *Gradient* of the function and our algorithm's name *Hill Descent* is changed
 ## Gradient Descent algorithm
 
 
-**It is similar to *Hill Descent* algrorithm. It is an iterative algorithm which stops only when magnitude of the
+**It is similar to *Hill Descent* algorithm. It is an iterative algorithm which stops only when the magnitude of the
 *Gradient* is less than the specified threshold (&epsilon;). The only difference between *Hill Descent* & *Gradient Descent*
 is that instead of calculating the *First Derivative* we will be calculating the *Gradient* because here there is multi-
 dimensional input instead of a single feature as input.**
@@ -811,15 +806,15 @@ the algorithm.**
 **So now we know about optimization so we can think about applying optimization algorithms that we described to our
 specific scenario of interest. Which is searching over all possible lines and finding the line that best fits our data.**
 
-**The first thing that's important to mention is the fact that our objective is *Convex*. So ywe can go and show that
-this is a *Convex* function. And what this is implies is that the solution to this minimization problem is unique. We
+**The first thing that's important to mention is the fact that our objective is *Convex*. So we can go and show that
+this is a *Convex* function. And what this implies is that the solution to this minimization problem is unique. We
 know there's a unique minimum to this function. And likewise, we know that our *Gradient Descent* algorithm will converge
 to this minimum.**
  
 **It sounds like a very complicated problem that we have to search over all possible lines to find the best fitting line
-to our dataset. And, of course we couldn't possibly go and test each one of these lines, so we can use our very straightforward optimization algorithms that we described above and solve for the solution to the problem.**
+to our dataset. And, of course, we couldn't possibly go and test each one of these lines, so we can use the very straightforward optimization algorithms that we described above and solve for the solution to the problem.**
 
-**Let's return to the definition of our cost, which is the *Residual Sum of Squares* of our two parameters, (w<sub>0</sub>, w<sub>1</sub>). In order to find the optimum parameters through *Gradient Descent* we have to compute the *Gradient*.**
+**Let's return to the definition of our cost, which is the *Residual Sum of Squares* of our two parameters, (w<sub>0</sub>, w<sub>1</sub>). To find the optimum parameters through *Gradient Descent* we have to compute the *Gradient*.**
 
 **Our Residual Sum of Squares is,**
 
@@ -872,8 +867,80 @@ to our dataset. And, of course we couldn't possibly go and test each one of thes
 
 
 
+ 
+**Well we have the *Gradients* so we can apply two approaches to get the optimum parameters**
+
+
+## Approach 1
+
+**We can take the *Gradient* and set it equal to zero. After applying this approach to the *Gradients* we get the 
+following values for our parameters**
 
 
 
 
-Well here we can take the gradient and set it equal to zero
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(7).gif"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(8).gif"/>
+</p>
+
+
+
+
+**Above parameters can be simplified to the following,**
+ 
+**W<sub>0</sub> = (mean of Y) - slope * (mean of X)**
+**W<sub>1</sub> = ((mean of X * Y) - (mean of X)*(mean of Y))/ ((mean of X^2) - (mean of X)*(mean of X))**
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(18).png"/>
+</p>
+
+
+
+
+
+## Approach 2
+
+**Instead of setting *Gradient* to zero we can apply *Gradient Descent* algorithm**
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(19).png"/>
+</p>
+
+
+
+
+
+**Let's interpret the parameters W<sub>0</sub> & W<sub>1</sub> obtained from the *Gradient Descent*.**
+
+**From the above image we can see that in W<sub>0</sub> a term is added which is nothing but the difference between
+the original price of the house and predicted price of the house. So if suppose we are always under predicting the price of the house
+then y<sub>i</sub> - y_hat<sub>i</sub> is going to be positive then we are increasing the weights. In other words, 
+since we are under predicting the price which means that our predicted line is lower than it should be so
+we are pushing it in upward direction thereby, trying to fit the data as much good as possible.**
+
+**Similar intuition for W<sub>1</sub>, just here we are adding  (y<sub>i</sub> - y_hat<sub>i</sub>)*X<sub>i</sub>**
+
+
+
+## Comparing two Approaches
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(20).png"/>
+</p>
+
+
+
+
