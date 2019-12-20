@@ -489,6 +489,7 @@ to do this? So that's the key question that we're looking to address in this sec
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-19%20(14).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20.png"/>
 </p>
 
 
@@ -498,13 +499,78 @@ to do this? So that's the key question that we're looking to address in this sec
 we see is it's a function of two variables, w<sub>0</sub> and w<sub>1</sub>. So we can write it generically, let's
 just write it as some function g of a variable w<sub>0</sub> and a variable w<sub>1</sub>. And what I've done is I've
 gone ahead and plotted the residual sum of squares versus w<sub>0</sub> and w<sub>1</sub> for the data set. So here
-along this axis is w<sub>0</sub> and along this axis is w<sub>1</sub>. And then we are plotting here our 
-*Residual Sum of Squares*. And that is this blue mesh surface here, that's our residual sum of squares for any given
+along *X-axis* is w<sub>0</sub> and along  *Y-axis* is w<sub>1</sub>. And then we are plotting here our 
+*Residual Sum of Squares*. And the blue mesh surface in the image, is our *Residual Sum of Squares* for any given
 w<sub>0</sub>, w<sub>1</sub> pair. And our objective here is to minimize over all possible combinations of w<sub>0</sub>,
 and w<sub>1</sub>.**
 
-**So we want to find the specific value of w<sub>0</sub>. So, we'll call that w<sub>0</sub> hat. And w<sub>1</sub> hat,
-that minimize this *Residual Sum of Squares*. So, this is our objective. This is an optimization problem, where specifically the optimization objective is to minimize a function, in this case, of two parameters, two different variables**
+**So we want to find the specific value of w<sub>0</sub>. So, we'll call that w<sub>0</sub> hat & w<sub>1</sub> hat,
+that minimize this *Residual Sum of Squares*. So, this is our objective. This is an optimization problem, where
+specifically the optimization objective is to minimize a function, in this case, of two parameters, two different variables**
+
+**So now we are gonna discuss some optimization techniques which will give us the best parameters, w<sub>0</sub> hat
+& w<sub>1</sub> hat which minimizes the *Residual Sum of Squares* thereby providing us the best model, but before that
+we have to discuss some terminologies like what is *Concavity*, *Convexity* and other related terms.**
+
+
+
+## An aside on Optimization
+
+
+## Concave/Convex functions
+
+
+**Given a function *g(w)* if we construct a line starting at point *(a, g(a))*  and ending at point *(b, g(b))* then the 
+line always lie below the function *g(w)* then this type of functions are known as *Concave* functions.
+
+**And if, given a function *g(w)* if we construct a line starting at point *(a, g(a))*  and ending at point *(b, g(b))* 
+then if line always lie above the function *g(w)* then this type of functions are known as *Convex* functions.
+
+
+**Last but not the least, given a function *g(w)* if we construct a line starting at point *(a, g(a))*  and ending at 
+point *(b, g(b))* then if line sometimes lie above the function & sometimes lie below the function then this type of
+functions are neither *Convex* nor *Concave*.**
+
+**Below are examples of each case**
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(1).png"/>
+</p>
+
+
+
+
+**Now we know what is *Concavity* and *Convexity*, let's discuss how to find maximum and minimum of a function because
+our cost which is *Residual Sum of Squares* is *Convex* and we have to find the parameters that minimizes our cost on 
+the dataset.**
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(2a).png"/>
+</p>
+
+
+
+
+**In case of *Concave* function we can only find maximum value while in case of *Convex* functions we can only find minimum
+value.**
+
+**In order to find the minimum and maximum values in *Convex* and *Concave* functions respectively we have to take first 
+derivative of the function and make the derivative of the fnction as zero adnd calculate the value where that derivative
+is zero. The value where derivative is zero will give minimum and maximum value in *Convex* and *Concave* respectively.**
+
+**In case of neither *Concave* nor *Convex* function there can be multiple maximum and minimum values.**
+
+**Let's look at the example below.**
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(2).png"/>
+</p>
 
 
 
