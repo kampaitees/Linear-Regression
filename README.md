@@ -771,6 +771,7 @@ dimensional input instead of a single feature as input.**
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(10b).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(10).png"/>
 </p>
 
 
@@ -779,11 +780,13 @@ dimensional input instead of a single feature as input.**
 ## Contour plot
 
 
+**It is nothing but a way of visualising the *Gradient Descent* algorithm in 2D. It's actually *Bird's Eye View* of the algorithm**
+
+
 
 <p align="center">
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(10).png"/>
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(11).png"/>
 </p>
-
 
 
 
