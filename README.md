@@ -1002,10 +1002,14 @@ tool, it's actually incredibly powerful.**
 
 
 
-**If you liked the blog, follow my GitHub(@kampaitees) to get updates about the upcoming articles. Also, share this 
-article so that it can reach out to the readers who can gain knowledge from this. Please feel free to discuss anything
-regarding the post. I would love to hear feedback from you guys.**
-
 
 ## References
-Machine Learning Specialization Course 2 from University of Washington
+
+**Machine Learning Specialization Course 2 from University of Washington.**
+
+
+
+
+**If you liked the blog, follow my GitHub([@kampaitees](https://github.com/kampaitees)) to get updates about the upcoming articles. Also, share this 
+article so that it can reach out to the readers who can gain knowledge from this. Please feel free to discuss anything
+regarding the post. I would love to hear feedback from you guys.**
