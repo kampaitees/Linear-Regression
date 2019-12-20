@@ -57,7 +57,7 @@ various other *Regression* algorithms but in this blog, we are gonna study *Simp
 
 
 **Before going into deep, let's first discuss some terminology, examples related to regression so that we can understand it
-better later**
+better later.**
 
 
 
@@ -122,9 +122,11 @@ the output of our *regression* model will be the price of the house(*$$$*).**
 
 **From the image above it can be seen that there are some points scatter on the 2D space where *Y-axis* is the *price($$$)* 
 of the house and *X-axis* is the *size(sq. ft.)* of the house and points are scattered according to that. Then there is a
-green line which we call as the function (f(x)) best fitting on our data(we will see later). But we can see that our function does not pass through all the data points. So if we take a point X<sub> I </sub> marked blue in the image above we
-see that there is a gap between the original value and predicted the value at X<sub> I </sub>. This gap is called as the 
-error(&epsilon;<sub>i</sub>).**
+green line which we call as the function (f(x)) best fitting on our data(we will see later).**
+ 
+**But we can see that our function does not pass through all the data points. So if we take a point X<sub> I </sub> marked
+blue in the image above we see that there is a gap between the original value and predicted the value at X<sub> I </sub>. 
+This gap is called as the error(&epsilon;<sub>i</sub>).**
  
 **Similarly, there is some error in all the predicted value of the data points.**
 
@@ -180,7 +182,7 @@ works. So above we have discussed the assumption had been taken while designing 
 
 
 
-**So we are now gonna discuss the life cycle of a Machine Learning algorithm**
+**So we are now gonna discuss the life cycle of a Machine Learning algorithm.**
 
 
 
@@ -234,11 +236,16 @@ It is the simplest form of all regression algorithms.**
 
 **So going back to our flowchart, what we're gonna talk about now is specifically the machine learning model. So
 that's highlighted green box and everything else is greyed out so you can forget about everything else for now. We're
-just talking about our model and what form it takes. So our *Simple Linear Regression* model is just that. It's very simple. We're assuming we have just one input, which in this case is, *square feet* of the house and one output which
-is the house *sales price* and we're just gonna fit a line. A very simple function here not that quadratic function or higher-order polynomials we talked about before, just a very simple line. And what's the equation of a line?**
+just talking about our model and what form it takes. So our *Simple Linear Regression* model is just that. It's very
+simple. We're assuming we have just one input, which in this case is, *square feet* of the house and one output which
+is the house *sales price* and we're just gonna fit a line. A very simple function here not that quadratic function or
+higher-order polynomials we talked about before, just a very simple line. And what's the equation of a line?**
  
-**Well, it's just *intercept* plus *slope* times our variable of interest so that we're gonna say that's W<sub>0</sub> + W<sub>1</sub>x. And what this regression model then specifies is that each one of our observations y<sub>i</sub> is simply that 
-function evaluated at X<sub>i</sub>. So that's  W<sub>0</sub> plus W<sub>i</sub> * X<sub>i</sub> plus the 
+**Well, it's just *intercept* plus *slope* times our variable of interest so that we're gonna say that's W<sub>0</sub>
++ W<sub>1</sub> * x.**
+
+**And what this regression model then specifies is that each one of our observations y<sub>i</sub> is
+simply that function evaluated at X<sub>i</sub>. So that's  W<sub>0</sub> plus W<sub>i</sub> * X<sub>i</sub> plus the 
 error term which we called &epsilon;<sub>i</sub>. So this is our regression model, and to be clear, this error,
 &epsilon;<sub>i</sub>, is the distance from our specific observation back down to the line.**
 
@@ -312,8 +319,8 @@ a fit. So, we're gonna talk about this orange box in the above image which is qu
 
 
 **So here the metric we are going to use is called *Residual Sum of Errors* also abbreviated as *RSS*. It is nothing
-but the sum of squares of the difference between the original price of the house and predicted the price of the house by our model over the whole
-training dataset i.e.,**
+but the sum of squares of the difference between the original price of the house and predicted the price of the house by
+our model over the wholextraining dataset i.e.,**
 
 
 
@@ -338,7 +345,7 @@ training dataset i.e.,**
 
 
 
-Above equation can also be written as,
+**Above equation can also be written as,**
 
 
 <p align="center">
@@ -353,7 +360,7 @@ cost.**
 
 **Now we have overall cost of a particular *Regression* model, we can try the different possible combination of 
 parameters i.e., w<sub>0</sub> and w<sub>1</sub> which will give different cost and we will take that line which
-had minimum cost**
+had minimum cost.**
 
 
 
@@ -424,7 +431,7 @@ budget.**
 ### Interpreting the coefficients
 
 **W<sub>0</sub> is nothing but it's the price of the house when the size of the house is 0 which doesn't make sense
-but W<sub>0</sub> doesn't have any meaning full interpretation**
+but W<sub>0</sub> doesn't have any meaning full interpretation.**
 
 
 
@@ -438,7 +445,7 @@ but W<sub>0</sub> doesn't have any meaning full interpretation**
 
 
 **W<sub>1</sub> is the slope of the line which here means that it is predicted the change in the price of the house(*output*)
-per unit change in the size of the house(*input*)**
+per unit change in the size of the house(*input*).**
 
 
 
@@ -481,9 +488,9 @@ So in particular what we're going to be doing is focusing in on this machine lea
 grey square is shown in the above flow chart.**
  
 **So recall that our cost was to find us this *Residual Sum of Squares*, and for any given line, we can compute
-the cost of that line. So, for example, we showed three different lines and three different residual sums of squares here,
-but our goal was to minimize over all possible W0 and W1 slopes and intercepts, but a question is, how are we going
-to do this? So that's the key question that we're looking to address in this section.**
+the cost of that line. So, for example, we showed three different lines and three different residual sums of squares
+here, but our goal was to minimize over all possible W0 and W1 slopes and intercepts, but a question is, how are we
+going to do this? So that's the key question that we're looking to address in this section.**
 
 
 
@@ -499,8 +506,9 @@ to do this? So that's the key question that we're looking to address in this sec
 **Let's formalize this idea a little bit more. So here, what we're showing is our *Residual Sum of Squares* and what
 we see is it's a function of two variables, w<sub>0</sub> and w<sub>1</sub>. So we can write it generically, let's
 just write it as some function g of a variable w<sub>0</sub> and a variable w<sub>1</sub>. And what I've done is I've
-gone ahead and plotted the residual sum of squares versus w<sub>0</sub> and w<sub>1</sub> for the data set. So here
-along *X-axis* is w<sub>0</sub> and along  *Y-axis* is w<sub>1</sub>. And then we are plotting here our 
+gone ahead and plotted the residual sum of squares versus w<sub>0</sub> and w<sub>1</sub> for the data set.** 
+
+**So here along *X-axis* is w<sub>0</sub> and along  *Y-axis* is w<sub>1</sub>. And then we are plotting here our 
 *Residual Sum of Squares*. And the blue mesh surface in the image is our *Residual Sum of Squares* for any given
 w<sub>0</sub>, w<sub>1</sub> pair. And our objective here is to minimize over all possible combinations of w<sub>0</sub>,
 and w<sub>1</sub>.**
@@ -522,17 +530,17 @@ we have to discuss some terminologies like what is *Concavity*, *Convexity* and 
 
 
 **Given a function *g(w)* if we construct a line starting at point *(a, g(a))*  and ending at point *(b, g(b))* then the 
-line always lie below the function *g(w)* then this type of functions are known as *Concave* functions.
+line always lie below the function *g(w)* then this type of functions are known as *Concave* functions.**
 
 **And if, given a function *g(w)* if we construct a line starting at point *(a, g(a))*  and ending at point *(b, g(b))* 
-then if line always lie above the function *g(w)* then this type of functions are known as *Convex* functions.
+then if line always lie above the function *g(w)* then this type of functions are known as *Convex* functions.**
 
 
 **Last but not the least, given a function *g(w)* if we construct a line starting at point *(a, g(a))*  and ending at 
 point *(b, g(b))* then if line sometimes lie above the function & sometimes lie below the function then this type of
 functions are neither *Convex* nor *Concave*.**
 
-**Below are examples of each case**
+**Below are examples of each case.**
 
 
 <p align="center">
@@ -557,10 +565,11 @@ the dataset.**
 
 
 
-**In case of *Concave* function we can only find maximum value while in case of *Convex* functions we can only find a minimum
-value.**
+**In case of *Concave* function we can only find maximum value while in case of *Convex* functions we can only find a
+minimum value.**
 
-** To find the minimum and maximum values in *Convex* and *Concave* functions respectively we have to take the first derivative of the function and make the derivative of the function as zero and calculate the value where that derivative
+**To find the minimum and maximum values in *Convex* and *Concave* functions respectively we have to take the first
+derivative of the function and make the derivative of the function as zero and calculate the value where that derivative
 is zero. The value where a derivative is zero will give the minimum and maximum value in *Convex* and *Concave* respectively.**
 
 **In case of neither *Concave* nor *Convex* function there can be multiple maximum and minimum values.**
