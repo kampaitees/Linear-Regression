@@ -964,3 +964,44 @@ algorithms to solve our problems.**
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(20).png"/>
 </p>
+
+
+
+
+
+## Conclusion & Sumary for Simple Linear Regression
+
+
+
+**So in this blog I've talked about *Simple Linear Regression*. And what we've seen is we've described what the model
+is. We just have a single input, single output, and fitting a line or model. It's just a simple line, to describe the 
+relationship between our input *X* and our output *y*.**
+
+**We've talked about goodness of fit of a specific line to our data and the measure being the *Residual Sum of Squares*.
+We've also talked about some ways to think about interpreting our fitted line and using it to form predictions.**
+
+**But a big emphasis was on thinking about how do we actually fit that line to the data, and we talked about different
+*Optimization* techniques. The big one being, *Gradient Descent*, and using that to minimize our *Residual Sum Squares*,
+to come up with our fitted line that we're gonna use for predictions. Even though this is a very very simple and basic
+tool, it's actually incredibly powerful.**
+
+
+**In the next blog of this series we will go through concepts of *Multiple Linear Regression* model in detail.**
+
+
+
+## What all you can do now
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-21.png"/>
+</p>
+
+
+
+
+## References
+Machine Learning Specialization Course 2 from University of Washington
