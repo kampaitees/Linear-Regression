@@ -881,7 +881,13 @@ following values for our parameters**
 
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(7).gif"/>
-  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(8).gif"/>
+</p>
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/CodeCogsEqn(8).gif"/>  
 </p>
 
 
