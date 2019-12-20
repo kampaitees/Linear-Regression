@@ -716,7 +716,7 @@ always want to minnimize the cost and our cost functions are also *Convex* for w
 
 
 
-**In practice we will stop the algorithm when magnitude of the gradient(*first derivative*) is less than some 
+**In practice we will stop the algorithm when magnitude of the *First Derivative* is less than some 
 threshold(&epsilon;) set by us only. The reason for this is that in practice, we can never get to the minimum of the
 function because of randomness in the dataset so we are happy with the parameters that are exactly not optimum but very
 near to the optimum parameters.** 
@@ -735,7 +735,54 @@ as *Gradient* of the function and our algorithm's name *Hill Descent* is changed
 
 
 
+## Gradient Example
 
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(9).png"/>
+</p>
+
+
+
+
+
+## Gradient Descent algorithm
+
+
+**It is similar to *Hill Descent* algrorithm. It is an iterative algorithm which stops only when magnitude of the
+*Gradient* is less than the specified threshold (&epsilon;). The only difference between *Hill Descent* & *Gradient Descent*
+is that instead of calculating the *First Derivative* we will be calculating the *Gradient* because here there is multi-
+dimensional input instead of a single feature as input.**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(10a).png"/>
+</p>
+
+
+
+
+## Convergence Criteria
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(10b).png"/>
+</p>
+
+
+
+
+## Contour plot
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(10).png"/>
+</p>
 
 
 
