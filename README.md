@@ -929,10 +929,10 @@ following values for our parameters**
 **Let's interpret the parameters W<sub>0</sub> & W<sub>1</sub> obtained from the *Gradient Descent*.**
 
 **From the above image we can see that in W<sub>0</sub> a term is added which is nothing but the difference between
-the original price of the house and predicted price of the house. So if suppose we are always under predicting the price of the house
-then y<sub>i</sub> - y_hat<sub>i</sub> is going to be positive then we are increasing the weights. In other words, 
-since we are under predicting the price which means that our predicted line is lower than it should be so
-we are pushing it in upward direction thereby, trying to fit the data as much good as possible.**
+the original price of the house and predicted price of the house. So if suppose we are always under predicting the
+price of the house then y<sub>i</sub> - y_hat<sub>i</sub> is going to be positive then we are increasing the weights.
+In other words, since we are under predicting the price which means that our predicted line is lower than it should
+be so we are pushing it in upward direction thereby, trying to fit the data as much good as possible.**
 
 **Similar intuition for W<sub>1</sub>, just here we are adding  (y<sub>i</sub> - y_hat<sub>i</sub>) * X<sub>i</sub>**
 
@@ -943,10 +943,24 @@ we are pushing it in upward direction thereby, trying to fit the data as much go
 
 
 
+**We've gone over, either setting the gradient equal to zero or doing gradient descent. Well, in the case of minimizing
+*Residual Sum of Squares*, we showed that both were fairly straight forward to do. But in a lot of the machine learning
+method's that we're interested in taking the gradient and setting it equal to zero, well there's just no closed-form 
+solution in many cases.**
+
+**So, often we have to turn to method's like *Gradient Descent*. And likewise, we are gonna see in next blogs that 
+where we turn to have lots of different inputs, lots of different features in our *Regression*, even though there
+might be a closed-form solution to setting the gradient equal to zero, sometimes in practice, it can be much more 
+efficient computationally to implement the *Gradient Descent* approach.**
+ 
+**And finally one thing that I should mention about the *Gradient Descent* approach is the fact that in that case, we
+had to choose a step size and a convergence criteria which, of course, is a downside to the *Gradient Descent* approach,
+is having to specify these parameters of the algorithm. But many times we're relying on these types of *Optimization* 
+algorithms to solve our problems.**
+
+
+
+
 <p align="center">
   <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(20).png"/>
 </p>
-
-
-
-
