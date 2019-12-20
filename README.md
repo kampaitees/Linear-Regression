@@ -928,7 +928,7 @@ then y<sub>i</sub> - y_hat<sub>i</sub> is going to be positive then we are incre
 since we are under predicting the price which means that our predicted line is lower than it should be so
 we are pushing it in upward direction thereby, trying to fit the data as much good as possible.**
 
-**Similar intuition for W<sub>1</sub>, just here we are adding  (y<sub>i</sub> - y_hat<sub>i</sub>)*X<sub>i</sub>**
+**Similar intuition for W<sub>1</sub>, just here we are adding  (y<sub>i</sub> - y_hat<sub>i</sub>) * X<sub>i</sub>**
 
 
 
