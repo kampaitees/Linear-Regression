@@ -700,6 +700,38 @@ initially it is large and keep on decreasing after each iteration.**
 ## Convergence criteria
 
 
+**For *Convex* functions we can find the optimum value when first derivative is set to zero but in practice, where
+there may be chances that the function may not be derivable so we never use this method i.e., finding the first 
+derivative and setting it to zero. We always use *Hill Climbing/Descent* algorithm and in *Machine Learning* we 
+always want to minnimize the cost and our cost functions are also *Convex* for we are gonna use *Hill Descent* algorithm.**
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(8).png"/>
+</p>
+
+
+
+
+**In practice we will stop the algorithm when magnitude of the gradient(*first derivative*) is less than some 
+threshold(&epsilon;) set by us only. The reason for this is that in practice, we can never get to the minimum of the
+function because of randomness in the dataset so we are happy with the parameters that are exactly not optimum but very
+near to the optimum parameters.** 
+  
+**But as we know that input attributes are not a single(except *Simple Linear Regression*) attribute so instead of
+taking the derivative we will take partial derivative w.r.t each and every attribute of the dataset and we will call it 
+as *Gradient* of the function and our algorithm's name *Hill Descent* is changed to *Gradient Descent* in multiple dimensions.**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(7).png"/>
+</p>
+
 
 
 
