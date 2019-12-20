@@ -791,3 +791,89 @@ the algorithm.**
 
 
 
+
+## Finding the best line
+
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(12).png"/>
+</p>
+
+
+
+
+
+
+**So now we know about optimization so we can think about applying optimization algorithms that we described to our
+specific scenario of interest. Which is searching over all possible lines and finding the line that best fits our data.**
+
+**The first thing that's important to mention is the fact that our objective is *Convex*. So ywe can go and show that
+this is a *Convex* function. And what this is implies is that the solution to this minimization problem is unique. We
+know there's a unique minimum to this function. And likewise, we know that our *Gradient Descent* algorithm will converge
+to this minimum.**
+ 
+**It sounds like a very complicated problem that we have to search over all possible lines to find the best fitting line
+to our dataset. And, of course we couldn't possibly go and test each one of these lines, so we can use our very straightforward optimization algorithms that we described above and solve for the solution to the problem.**
+
+**Let's return to the definition of our cost, which is the *Residual Sum of Squares* of our two parameters, (w<sub>0</sub>, w<sub>1</sub>). In order to find the optimum parameters through *Gradient Descent* we have to compute the *Gradient*.**
+
+**Our Residual Sum of Squares is,**
+
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(14).png"/>
+</p>
+
+
+
+
+**Computing Gradient of the *RSS* w.r.t W<sub>0</sub>**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(15).png"/>
+</p>
+
+
+
+
+
+**Computing Gradient of the *RSS* w.r.t W<sub>1</sub>**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(16).png"/>
+</p>
+
+
+
+
+
+**Putting it all together**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(17).png"/>
+</p>
+
+
+
+
+
+
+
+
+Well here we can take the gradient and set it equal to zero
