@@ -653,3 +653,58 @@ If it is negative then we have to move forward while if it's positive then we ha
 
 
 
+**So now we know how to find the maximum/minimum value of a function but there are few skeptical things in the algorithm 
+which you will be thinking how to decide them. So now we are gonna discuss how to decide them i.e., we will explore what
+&eta; value we should take and what should be the convergence criteria for algorithm i.e., when we have to stopthe algorithm.**
+
+
+## Choosing the Stepsize(&eta;)
+
+
+**Stepsize(&eta;) decides how much time it will take to the algorithm to reach to minimum/maximum value of function.
+If &eta; is very high then there are chnaces that we may overshoot the required parameters and will never reach to
+that value again and if &eta; value is very small then it will take a long time for algorithm to find the required 
+parameters.
+So it's kind of art to find the optimum value of stepsize for the dataset.**
+
+**It is suggested to take *Stepsize* where initially it's value is relatively large, as our algorithm progresses it's
+value keep on decreasing because initially we start from a random value of parameters so we want to take big steps to 
+converge fast but after each iteration we are more close to optimum parameters so after some iterations we are more 
+close to required parameters so we don't wan't to overshoot them therefore we take the stepsize in such a way that 
+initially it is large and keep on decreasing after each iteration.**
+
+
+**Some common choices for *Stepsize* are,**
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(5).png"/>
+</p>
+
+
+
+**If we take the fixed *Stepsize* then we may reach to the optimum parameters but the motion will be like,**
+
+
+
+
+<p align="center">
+  <img src = "https://github.com/kampaitees/Linear-Regression/blob/master/Images/2019-12-20%20(6).png"/>
+</p>
+
+
+
+
+
+## Convergence criteria
+
+
+
+
+
+
+
+
+
+
