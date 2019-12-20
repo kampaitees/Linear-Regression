@@ -242,7 +242,7 @@ is the house *sales price* and we're just gonna fit a line. A very simple functi
 higher-order polynomials we talked about before, just a very simple line. And what's the equation of a line?**
  
 **Well, it's just *intercept* plus *slope* times our variable of interest so that we're gonna say that's W<sub>0</sub>
-+ W<sub>1</sub> * x.**
++ W<sub>1</sub>x.**
 
 **And what this regression model then specifies is that each one of our observations y<sub>i</sub> is
 simply that function evaluated at X<sub>i</sub>. So that's  W<sub>0</sub> plus W<sub>i</sub> * X<sub>i</sub> plus the 
