@@ -989,9 +989,7 @@ tool, it's actually incredibly powerful.**
 **In the next blog of this series we will go through concepts of *Multiple Linear Regression* model in detail.**
 
 
-
 ## What all you can do now
-
 
 
 
@@ -1001,6 +999,12 @@ tool, it's actually incredibly powerful.**
 </p>
 
 
+
+
+
+**If you liked the blog, follow my GitHub(@kampaitees) to get updates about the upcoming articles. Also, share this 
+article so that it can reach out to the readers who can gain knowledge from this. Please feel free to discuss anything
+regarding the post. I would love to hear feedback from you guys.**
 
 
 ## References
